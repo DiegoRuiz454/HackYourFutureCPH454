@@ -1,0 +1,348 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    
+    
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo,
+  #nav {
+    border: 1px solid grey;
+    padding: 40px;
+    background-color: lightgray;
+    font-size: 3.5vh;
+  }
+  
+  #nav {
+    width: 30vw;
+    text-align: center;
+  }
+  
+  #intro-text {
+    width: 60vw;
+    
+  }
+
+  #intro-text p {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1em;
+  }
+
+  progress{
+    border: 1px solid lightgray;
+    height: 6vh;
+    width: 100%;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+  progress::-webkit-progress-value {
+    background-color: rgb(178, 175, 184);
+  }
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: white;
+  }
+
+  section p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  }
+
+form{
+  width: 100%;
+  padding: 6px;
+}
+ 
+.container-inputs {
+  display: inline;
+  flex-flow: row wrap;
+  padding: 20px;
+  
+
+  
+}
+
+.input-50{
+  
+   border: 1px solid rgb(3, 3, 3);
+   height: 6vh;
+   width: 30%;
+   position: relative;
+   left: 36px;
+   margin:20px;
+   
+  }
+
+#country{
+  position: relative;
+  left: 80px;
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 18%;
+
+
+}
+
+.input-51{
+  
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 30%;
+  position: relative;
+  left: 10px;
+  margin:20px;
+  
+ }
+
+ .input-52{
+  
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 30%;
+  position: relative;
+  left: 12px;
+  margin:20px;
+  
+ }
+
+ div{
+  font-size: 1em;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+label{
+ margin-left: 8px;
+ font-size: 1em;
+ font-weight: 700;
+
+}
+.shipping{
+
+  font-size: 1em;
+}
+
+.description label,.description p {
+  width: 110px;
+  text-align: left;
+  display: block;
+  margin-right: 1vw;
+}
+
+.description {
+  display: flex;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+#next_step {
+  padding: 40px 80px ;
+  border: 1px solid rgb(127, 115, 160);
+  outline: none;
+  font-size: 1em;
+  float: right;
+  margin-bottom: 20px;
+
+}
+
+/*---------------- form2 --------------------- */
+
+
+.form_2{
+  width: 95vw;
+  display: inline-block;
+
+
+}
+
+.form_2 input{
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 30%;
+  margin: 10px;
+  
+}
+
+#email{
+
+  position: relative;
+  left: 100px;
+}
+
+#phone{
+  position: relative;
+  left: 50px;
+}
+
+#password{
+  position: relative;
+  left: 65px;
+
+}
+
+.form_2 label {
+
+  font-size: 1em;
+  position: relative;
+  left: 10px;
+
+}
+
+.select{
+  position: relative;
+  left: 80px;
+  width: 90vw;
+  padding: 20px;
+  
+
+
+}
+
+.text_3{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+
+}
+
+/*---------------- form3 --------------------- */
+
+.form_2{
+   margin: auto;
+
+}
+
+#checkbox1{
+  position: relative;
+  right:100px;
+
+}
+
+#checkbox2{
+  position: relative;
+  right: 120px;
+  
+}
+#checkbox3{
+  position: relative;
+  right: 135px;
+}
+#checkbox4{
+  position: relative;
+  right: 145px;
+}
+#checkbox5{
+  position: relative;
+  right: 117px;
+}
+
+
+.boxes{
+ 
+  display: flex;
+  flex-flow: row wrap;
+  width: 90vw;
+  height: 90vh;
+ 
+
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  width: 18vw;
+  height: 35vh;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+.box1 {
+  
+  display: flex;
+   width: 90vw;
+   background-color: rgb(255, 255, 255);
+   
+   
+}
+
+/*---------------- form4--------------------- */
+
+#cardtype{
+  position: relative;
+  left: 99px;
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 18%;
+
+
+}
+
+
+#month{
+
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 5%;
+  position: relative;
+  left: 20px;
+  margin:20px;
+  
+
+}
+
+#year
+ {
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 5%;
+  position: relative;
+  left: 12px;
+  margin:20px;
+}
+
+input[name="ccv"] {
+  border: 1px solid rgb(3, 3, 3);
+  height: 6vh;
+  width: 5%;
+  position: relative;
+  left: 12px;
+  margin:20px;
+}
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+
+
+

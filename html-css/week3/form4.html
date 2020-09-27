@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FORMS_4</title>
+</head>
+<body>
+      
+<header>
+    <section>
+        <span id="logo">logo</span>
+        <nav id="nav">navigation</nav>
+    </section>
+
+
+<div id="intro-text">
+    <h1>Sign up to yourcustomtailor.com</h1>
+</div>
+<h2>Step 4/4- Payment</h2>
+
+</header>
+    <main>
+
+        <section>
+        <h2>Progress</h2>
+        <label for="file"></label>
+        <progress id="file" value="90" max="100"> </progress>
+        </section> <br> <br>
+
+        <p class="text">Please fill in your payment data </p>
+      
+        <form>
+            <div class="container-inputs">
+   
+               <div>
+                  
+   
+   
+                  <label for="card"> &nbsp; Name on card* </label>
+                  <input type="text" name="card" class="input-50" required>
+               </div>
+   
+               <div>
+   
+               <label for="cardtype"> Card type*  </label>
+               <select id="cardtype" name="cardtype"  >
+   
+                        <option value=""></option>
+                        <option value="gold">Gold</option>
+                        <option value="credi_card">Credi card</option>
+                        <option value="bbva">BBvA</option>
+                        
+                           
+                       </select>
+               
+               </div>
+   
+   
+               <div>
+   
+                   <label for="credi-card">Credi card number*</label>
+                   <input type="number" name="credi-card"  inputmode="numeric" max="16" min="1" class="input-51"  required>
+    
+    
+                   <label for="first-name">First name*  &nbsp; </label>
+                   <input type="text" name="first-name" class="input-52" required>
+   
+                </div>
+   
+   
+           </div>
+   
+           
+           </form> 
+
+           <div>
+            <label for="month"> &nbsp; &nbsp; &nbsp; &nbsp; Expiry month: </label>       
+            <select id="month" name="month">      
+                        <option value="blank"> - - -</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+            </select>
+
+            <label for="year"> &nbsp; &nbsp; &nbsp;  Expiry year: </label>       
+            <select id="year" name="year">      
+                        <option value=""> - - --</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="ccv">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                 &nbsp; &nbsp; &nbsp; &nbsp; CCV </label>
+            <input type="number" id="ccv" name="ccv"  inputmode="numeric"  pattern="\d{3}" maxlength="3" required>
+          </div>
+
+          <a href="index.html"><input id="next_step" type="submit" value="Next step"></a>
+
+
+
+    </main>
+</body>
+</html>
