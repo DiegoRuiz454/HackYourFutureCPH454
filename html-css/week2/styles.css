@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('menu.css');
+@import url('banner.css');
+
+
+
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+     }
+
+body{
+
+    font-family: 'Noto Sans', sans-serif;
+}     
+
+header{
+    width: 100%;
+    height: 50px;
+    background: rgb(218, 213, 213);
+    color: black;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+
+}
+
+.container h1{
+  float: left;
+ margin-top: 0px;
+
+}
+
+header .container{
+  display: table;
+
+}
+
+.father{
+    
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.section{
+    
+    background: rgb(255, 255, 255);
+    display: flex;
+    
+     
+}
+
+section img{
+    width: 100vw;
+}
+
+ .articles{
+     
+     background: rgb(255, 255, 255);
+     flex:1 1 auto;
+     display: flex;
+     flex-flow: row wrap;
+     
+ }
+  .article{
+    width: 48px;
+    background: rgb(255, 255, 255);
+    flex: 1 40%;
+    height: 1390px;
+}
+ 
+  .article h3{
+        padding: 45px;
+        font-size: 18px;
+       padding-bottom: 30px;
+        text-align: center;
+            }
+
+.article h4{
+        padding: 45px;
+        font-size: 18px;
+        padding-bottom: 30px;
+        text-align: left;
+        padding-left: 180px;
+        padding-top: 120px;
+          }         
+
+   .article p{
+      
+       text-align: justify;
+       padding-left: 180px;
+       padding-right: 180px;
+       padding-bottom: 600px;
+   } 
+
+
+   .article h5{
+      
+    text-align: justify;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+} 
+
+   .aside{
+    width: 48px;
+    background: rgb(255, 255, 255);
+    flex:1 1 auto ;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+   .texts{
+    background: rgb(255, 255, 255); 
+}
+   
+   .texts h3{
+    padding: 45px;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: center;
+    }
+
+    .texts h4{
+        
+        font-size: 18px;
+        padding-bottom: 30px;
+        text-align: left;
+        padding-top: 170px;
+        }
+
+
+
+   .texts p{
+    text-align: justify;
+    padding-left: 1px;
+    padding-right: 80px;
+    
+    }
+
+    .texts img{
+        padding-left: 40px;
+        padding-bottom: 100px;
+        
+        }
+  
+
+  
+
+.footer{
+     flex:1 1 auto;
+     display: flex;
+     background: rgb(96, 1, 173);
+     height: 600px;
+     justify-content: left;
+     
+    
+    
+}
+
+.foot1{
+    width: 100px;
+    background: rgb(96, 1, 173);
+    flex: 1 auto;
+    
+    
+    
+}
+
+.foot1 img{
+    padding-left: 100px;
+    padding-top: 40px;
+}
+.foot1 h3{
+    font-size: 22px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.foot1 h2{
+    font-size: 12px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.foot2{
+    width: 100px;
+    background: rgb(96, 1, 173);
+    flex: 1 auto;
+    
+    
+   
+}
+
+.foot2 h3{
+    font-size: 22px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.foot2 h2{
+    font-size: 12px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.foot3{
+    width: 100px;
+    background: rgb(96, 1, 173);
+    flex: 1 auto;
+    
+   
+    
+}
+
+.foot3 h3{
+    font-size: 22px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.foot3 h2{
+    font-size: 12px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+
+
+.foot4{
+    width: 100px;
+    background: rgb(96, 1, 173);
+    flex: 1 auto;
+    
+    
+    
+}
+
+.foot4 h3{
+    font-size: 22px;
+    color: rgb(218, 213, 213);
+    padding-left: 60px;
+    padding-top: 100px;
+}
+
+.foot4 h2{
+    font-size: 12px;
+    color: rgb(218, 213, 213);
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+
+@media all and (max-width: 800px){
+    .container{width: 1000px;
+               }
+       
+    }  
+
+
+             
+                     
+@media all and (max-width: 800px){
+        .container p
+        {
+        display: none;
+        }                       
+            } 
+
+             
+            
+            
+
+@media all and (max-width: 500px){
+        #banner h2       
+        {font-size: 20px;}
+    }  
+        
+@media all and (max-width: 350px){
+            #banner h2
+            {font-size: 10px;}
+             }
+
+@media all and (max-width: 200px){
+            #banner h2
+            {font-size: 8px;}
+             }
+
+  
+
+
+
+
+
+
+@media all and (max-width: 800px){
+     .section{flex-direction: column;
+               }   
+        }
+
+@media all and (max-width: 800px){
+        .aside{ display: flex;
+                justify-content:center;
+                width: auto;
+                padding-left: 25px;
+                margin-right: 25px;
+                 }   
+        }     
+@media all and (max-width: 800px){
+    .footer{flex-direction: column;
+            width: auto;
+                }
+               }
+
+@media all and (max-width: 800px){
+    .foot1{
+        justify-content:center;
+        width: auto;
+        flex-direction: column;
+           }
+        
+        }  
+        
+@media all and (max-width: 800px){
+    .foot1 h2 {
+        font-size: 12px;
+        text-align: left;
+        padding-top: 33px;
+            }  
+        }         
+
+@media all and (max-width: 800px){
+    .foot1 h3 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        }  } 
+
+                       
+
+
+
+                                   
+@media all and (max-width: 265px){
+    .foot1 h3 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }                    
+
+                                      
+@media all and (max-width: 265px){
+    .foot2 h3 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }                   
+
+                                      
+@media all and (max-width: 265px){
+    .foot3 h3 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }                   
+
+                                      
+@media all and (max-width: 265px){
+    .foot4 h3 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }                     
+
+@media all and (max-width: 265px){
+    .foot1 h2 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }   }                                
+
+@media all and (max-width: 265px){
+    .foot1 img {
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }   }                                           
+
+
+
+@media all and (max-width: 265px){
+         
+    .foot2 h2 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }
+
+@media all and (max-width: 265px){
+    .foot3 h2 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }                                                        
+
+@media all and (max-width: 265px){
+    .foot4 h2 {
+        font-size: 22px;
+        text-align: left;
+        font-size: 12px;
+        justify-content:center;
+        width: auto;
+        padding-left: 12px;
+        
+            }  }  
+            
+            
+
+@media all and (max-width: 800px){
+    .foot2{
+        justify-content:center;
+        width: auto;
+        flex-direction: column;
+        }
+       }              
+
+@media all and (max-width: 800px){
+    .foot3{
+        justify-content:center;
+        width: auto;
+        flex-direction: column;
+        }
+       } 
+       
+       
+@media all and (max-width: 800px){
+    .foot4{
+        justify-content:center;
+        width: auto;
+        flex-direction: column;
+        }
+       }                              
+
+
+@media all and (max-width: 800px){
+    .article h3 {
+        font-size: 22px;
+        text-align: center;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+         }  }                                   
+
+@media all and (max-width: 800px){
+    .article p {
+        font-size: 18px;
+        text-align: justify;
+        width: auto;
+        padding-left: 45px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        
+         }  }   
+         
+         
+@media all and (max-width: 800px){
+        .article h4 {
+            font-size: 22px;
+            text-align: left;
+            width: auto;
+            padding-left: 45px;
+            text-align: justify;
+            justify-content: left; 
+                   }  }                                                     
+                                                                      
+                                                                     
+                                                                      
+@media all and (max-width: 800px){
+            .article h5 {
+                font-size: 18px;
+                text-align: justify;
+                width: auto;
+                padding-left: 45px;
+                padding-right: 25px;  
+                padding-bottom: 25px; 
+                   }  }  
+                   
+@media all and (max-width: 800px){
+            .texts h3{
+                font-size: 18px;
+                text-align: justify;
+                width: auto;
+                padding-left: 45px;
+                padding-right: 25px;
+                padding-top: 30px;
+                    }  }
+                    
+                    
+@media all and (max-width: 800px){
+            .texts h4{
+                font-size: 18px;
+                text-align: justify;
+                width: auto;
+                padding-left: 45px;
+                padding-right: 25px;
+                padding-top: 30px;
+                     }  }  
+                     
+@media all and (max-width: 800px){
+            .texts img{
+                padding-left: 50px;
+                padding-bottom: 100px;
+                }  }                      
+
+                    
+@media all and (max-width: 800px){
+            .texts p{
+            font-size: 18px;
+            text-align: justify;
+            width: auto;
+            padding-left: 45px;
+            padding-right: 25px;
+        padding-bottom: 25px;
+                    }  }                     
+
+
+
+@media all and (max-width: 336px){
+        .article p {
+        font-size: 18px;
+        font-size: 12px;
+        width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: justify;
+         }  }                                                           
+
+
+@media all and (max-width: 194px){
+        .article p {
+        font-size: 12px;
+        width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: justify;                                                                     
+         }  }                                                                           
+                                                                                          
+
+@media all and (max-width: 194px){
+        .article h3 {
+        font-size: 12px;
+        width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: justify; 
+         }  }                                                                                         
+                                                                                                  
+                                                                                                      
+                                           
+                                           
+                                                             
+                                                                          
+                                                                          
+                                                                          
+                                                                             
+
+                                                                              
+ 
+    
+ 
+                
+
+
+
+
+
+
+
+  
