@@ -180,7 +180,7 @@ insert into task (id, title, description, created, updated, due_date, status_id,
 
 -- Find out how many tasks are in the task table:
 
-SELECT * id FROM task;
+SELECT count(id) from task;
 
 -- Find out how many tasks in the task table do not have a valid due date:
 
@@ -200,7 +200,7 @@ SELECT * FROM task ORDER BY  created ASC;
 
 -- Get the single most recently created task
 
-SELECT * FROM task WHERE created ASC;
+SELECT * FROM task ORDER BY created ASC;
 
 -- Get the title and due date of all tasks where the title or description contains database
 
@@ -226,8 +226,6 @@ Join status ON staus.id = task.status_id GROUP BY status_id;
 
 -- Get the names of all statuses, sorted by the status with most tasks first
 
-SELECT * FROM name ORDER BY statues, INNER JOIN 
-
-task ON statues.name = tasks.created
-
-OREDR BY created ASC;
+SELECT count(task.id), name from  task inner join status 
+on status.id=task.status_id group by status.name
+order by task.id desc;
