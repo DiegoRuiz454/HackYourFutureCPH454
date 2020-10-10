@@ -1,4 +1,8 @@
 
+
+//--------------------spirit_animal------------------------------//
+
+
 const spirit_adj = ["Hypnotic","Howling","Promiscuous","Melancholic","Feisty","Lame","Beloved","Fluffy","Standard",];
 
 const animal_name = ["Duck","Dog","Cat","Bird","butterfly","Monkey","Dolphine","crab","cow",];

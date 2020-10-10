@@ -1,3 +1,6 @@
+
+//----------------------first_point_Homework_find_shortest_word----------------------------//
+
 function find_shortest_word(danishWords) {
     danish_letter = danishWords;
     words = danishWords.replace(",", " ").split(" ");
