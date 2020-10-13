@@ -9,9 +9,9 @@ const animal_name = ["Duck","Dog","Cat","Bird","butterfly","Monkey","Dolphine","
 
 
 function spirit() {
-    escribir = document.getElementById("caja")
+    write = document.getElementById("box")
 
-    miTitulo = "<h1>" + document.rellenar.titulo.value + "</h1>"
+    mytitle = "<h1>" + document.fill.title.value + "</h1>"
     
     Spirit_Animal_Adj = ` the ${
         spirit_adj[
@@ -26,9 +26,9 @@ function spirit() {
       } ${animal_name[Math.floor(Math.random() * animal_name.length)]}`;
 
 
-    escribir.innerHTML = 'You spirit animal Name is' + miTitulo  + Spirit_Animal_Adj + Name_animal
+    write.innerHTML = 'You spirit animal Name is' + mytitle  + Spirit_Animal_Adj + Name_animal
     }
 window.onload = function() {
-document.rellenar.ver.onclick = spirit
+document.fill.ver.onclick = spirit
 } 
 
