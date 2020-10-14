@@ -63,12 +63,9 @@ UPDATE my_market SET status_id = '9' WHERE idmy_market = 2;
 -- Mark a task as complete
 
 
-SELECT * FROM my_market LIMIT 1;
-
-
+UPDATE hyf.task SET status_id = '1' WHERE idmy_market = 2;
 
 -- Delete a task
-
 
 DELETE FROM my_market WHERE idmy_market = 2;
 
