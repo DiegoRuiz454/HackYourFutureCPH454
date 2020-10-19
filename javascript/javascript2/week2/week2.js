@@ -7,7 +7,7 @@
 //---------filter-----------//
 
 
-let number = [1,2,3,4];
+const number = [1,2,3,4];
 let newNumber = number;
 const odd = number.filter(num => num % 2 !== 0) .map((num) => num * 2);
 console.log(odd);
@@ -55,7 +55,7 @@ const movies = [
     "running_times": 5700} ]
 
     //  movies with a short title
-let ShortMoviesTitle = movies.map((shortTitle) => shortTitle.title);
+const ShortMoviesTitle = movies.map((shortTitle) => shortTitle.title);
    // the movies with a long title
 let LongMoviesTitle = movies.map((longTitle) => longTitle.title).filter((movieTitle) => {
     if (movieTitle.length > 8) {
@@ -114,4 +114,4 @@ const extra = movies.filter((movie) => {
     return Duplicate;
   });
   
-  console.log(wordsduplicated);
+  
