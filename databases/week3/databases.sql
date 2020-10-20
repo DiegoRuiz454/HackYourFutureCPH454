@@ -1,5 +1,8 @@
 
 
+-----------HOMEWORK DATABASES WEEK#3---------------------
+
+
 CREATE SCHEMA `users` DEFAULT CHARACTER SET utf8 ;
 
 
@@ -16,7 +19,7 @@ CREATE TABLE `users`.`reservation` (
 
 `contact_phonenumber` VARCHAR(45) NULL,
 
-`contact_name` VARCHAR(45) NULL,
+`contact_name` VARCHAR(45) NULL,c
 
 `contact_email` VARCHAR(45) NULL,
 
@@ -62,8 +65,7 @@ CREATE TABLE `users`.`review` (
  
  `created_date` DATE NULL,
  
- PRIMARY KEY (`id`))
-ENGINE = InnoDB
+ PRIMARY KEY (`id`)) ENGINE = InnoDB
 
 DEFAULT CHARACTER SET = utf8;
 
@@ -117,8 +119,7 @@ SELECT tittle FROM users.meal;
 
 -- Add a new meal 
 
-INSERT INTO users.meal (id, tittle, description, location, when, max_reservation,price,created_date,) 
-VALUES ('6', 'potatoes with sauce', 'is a great food ', 'panama', '2019-03-02 18:12:00', '34','57','2018-03-20');
+INSERT INTO users.meal (id, tittle, description, location, when, max_reservation,price,created_date,) VALUES ('6', 'potatoes with sauce', 'is a great food ', 'panama', '2019-03-02 18:12:00', '34','57','2018-03-20');
 
 
 -- Get a meal with any id
@@ -128,9 +129,7 @@ SELECT tittle FROM users.meal where id = 5 ;
 
 -- Update a meal with any id, fx 1. Update any attribute fx the title or multiple attributes
 
-UPDATE users.meal 
-SET tittle = 'Rice with milk', location = 'afganistan', price = '90'   
-WHERE id = 1;
+UPDATE users.meal SET tittle = 'Rice with milk', location = 'afganistan', price = '90'   WHERE id = 1;
 
 
 -- Delete a meal with any id, fx 1
@@ -147,8 +146,7 @@ SELECT * FROM users.reservation;
 
 -- Add a new reservation 
 
-INSERT INTO users.reservation (id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name,contact_email) 
-VALUES ('6', '48', '13 ', '2018-12-05', '2302871', 'valeria','gonzalo876@hotmail.com');
+INSERT INTO users.reservation (id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name,contact_email) VALUES ('6', '48', '13 ', '2018-12-05', '2302871', 'valeria','gonzalo876@hotmail.com');
 
 
 -- Get a reservation with any id
@@ -157,16 +155,12 @@ SELECT contact_name FROM users.reservation where id = 5 ;
 
 -- Update a reservation with any id, fx 1. Update any attribute fx the title or multiple attributes
 
-UPDATE users.reservation 
-SET number_of_guests = '56' , contact_phonenumber = '2309831' , contact_name = 'julian' 
-WHERE id = 1;
+UPDATE users.reservation SET number_of_guests = '56' , contact_phonenumber = '2309831' , contact_name = 'julian' WHERE id = 1;
 
 
 -- Update a reservation with any id, fx 1. Update any attribute fx the title or multiple attributes
 
-UPDATE users.reservation 
-SET contact_name = 'margaret', contact_email = 'facundo545@gmail.com' 
-WHERE id = 3;
+UPDATE users.reservation SET contact_name = 'margaret', contact_email = 'facundo545@gmail.com' WHERE id = 3;
 
 -- Delete a reservation with any id, fx 1
 
@@ -181,8 +175,7 @@ SELECT * FROM users.review;
 
 -- Add a new review 
 
-INSERT INTO users.review (id, tittle, description, meal_id, stars, created_date) 
-VALUES ('6', 'chinese rice', 'ecxellent ', '7', '5', '2018-06-17');
+INSERT INTO users.review (id, tittle, description, meal_id, stars, created_date) VALUES ('6', 'chinese rice', 'ecxellent ', '7', '5', '2018-06-17');
 
 
 -- Get a review with any id
@@ -191,9 +184,7 @@ SELECT tittle FROM users.review where id = 5 ;
 
 -- Update a review with any id, fx 1. Update any attribute fx the title or multiple attributes
 
-UPDATE users.review 
-SET description = 'good' , stars = '3' , meal_id = '7' 
-WHERE id = 3;
+UPDATE users.review SET description = 'good' , stars = '3' , meal_id = '7' WHERE id = 3;
 
 -- Delete a review with any id, fx 1
 
@@ -202,15 +193,11 @@ DELETE FROM users.review WHERE id = 3;
 
 --Get meals that has a price smaller than a specific price fx 90
 
-SELECT * 
-FROM meal 
-WHERE price < 90;
+SELECT * FROM meal WHERE price < 90;
 
 -- Get meals that still has available reservations
 
-SELECT * FROM users.reservation
-INNER JOIN meal 
-ON reservation.meal_id = meal.id
+SELECT * FROM users.reservation INNER JOIN meal ON reservation.meal_id = meal.id
 
 --Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde
 
@@ -226,23 +213,15 @@ SELECT * FROM meal LIMIT 5;
 
 -- Get the meals that have good reviews
 
-SELECT * FROM users.review
- INNER JOIN users.meal 
-ON review.meal_id = meal.id 
-WHERE review.stars = 5;
+SELECT * FROM users.review INNER JOIN users.meal ON review.meal_id = meal.id WHERE review.stars = 5;
 
 -- Get reservations for a specific meal sorted by created_date
 
-SELECT * FROM users.reservation 
-INNER JOIN  meal
- ON reservation.meal.id = meal.id 
-WHERE created_date = '2018-11-17'
+SELECT * FROM users.reservation INNER JOIN  meal ON reservation.meal.id = meal.id WHERE created_date = '2018-11-17'
 
 --Sort all meals by average number of stars in the reviews
 
-SELECT * FROM users.review 
-INNER JOIN meal ON review.meal_id = meal.id 
-ORDER BY review.stars DESC;
+SELECT * FROM users.review INNER JOIN meal ON review.meal_id = meal.id ORDER BY review.stars DESC;
 
 
 
