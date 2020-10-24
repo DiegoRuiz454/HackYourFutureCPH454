@@ -16,7 +16,7 @@ form.addEventListener("submit", e => {
 
   if (listItemsArray.length > 0) {
     const filteredArray = listItemsArray.filter(el => {
-      let content = "";
+      let content = "" ;
       //athens,gr
       if (inputVal.includes(",")) {
         //athens>invalid country code, so we keep only the first part of inputVal

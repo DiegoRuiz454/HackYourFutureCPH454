@@ -244,7 +244,7 @@
   
   @media screen and (max-width: 500px) {
     body {
-      padding: 15px;
+      padding: 25px;
     }
     
     .ajax-section .cities {
