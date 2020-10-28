@@ -1,0 +1,65 @@
+
+   [  {
+        "id" : 1,
+        "NumberOfGuests" : 3,
+        "title" : "Burguer",
+        "description" : "delicious burguer",
+        "adress" : "asdsd",
+        "time": "asd",
+        "price" : 23,
+        "review" : [
+            { "id": 1,
+                "numberOfStars": 3,
+                "content": "Best meal ever",
+                "mealId": 1,
+                "createdAt": 12345
+            }
+        ]    },
+         { 
+            "id" : 2,
+            "NumberOfGuests" : 4,
+            "title" : "Breackfast feast",
+            "description" : "Breackfast Good",
+            "adress" : "asdsd",
+            "time": "asd",
+            "price" : 59,
+            "review" : [],
+            "createdArt": 12345
+
+         },
+         { 
+            "id" : 3,
+            "NumberOfGuests" : 6,
+            "title" : "rice milk",
+            "description" : "great food!!",
+            "adress" : "asdsd",
+            "time": "asd",
+            "price" : 10,
+            "review" : [
+                { "id": 3,
+                    "numberOfStars": 2,
+                    "content": "it is delicious",
+                    "mealId": 3,
+                    "createdAt": 12345
+                }
+            ]
+            
+
+         },
+         { 
+            "id" : 4,
+            "NumberOfGuests" : 12,
+            "title" : "mexican food",
+            "description" : "spice food ",
+            "adress" : "asdsd",
+            "time": "asd",
+            "price" : 120,
+            "review" : [],
+            "createdArt": 1234567
+
+         }
+
+          ]
+
+
+   
