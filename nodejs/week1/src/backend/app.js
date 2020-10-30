@@ -6,24 +6,20 @@ const meals = require("./data/meals.json");
 const reservations = require("./data/reservations.json");
 const reviews = require("./data/reviews.json");
 const warmup = require("./data/warmup.js");
-
+const meal = meals.map(meals => {
+    meals.reviews = reviews.filter(reviews => reviews.mealId === meals.id);
+    return meals;
+});
 //-----the result of the of the circle measurements in the server----------------
 
 console.log(warmup); 
 
-//----------Meals sharing Web ---------------------------
-
-app.get("/", async (request, response) => {
-    response.send("Meals Sharing Web App");
-}); 
-
-
 //----------------Respond with the json for all the meals.---------------------
 
 app.get("/meals", async (request, response) => {
-    
-    response.send(module.exports = {meals,reviews});
+    response.send(module.exports = meal);
 }); 
+
 
 //-----------Respond with the json for all the meals that are cheap ---------------------
 

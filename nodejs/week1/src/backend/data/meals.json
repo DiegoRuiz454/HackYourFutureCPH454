@@ -6,15 +6,8 @@
         "description" : "delicious burguer",
         "adress" : "asdsd",
         "time": "asd",
-        "price" : 23,
-        "review" : [
-            { "id": 1,
-                "numberOfStars": 3,
-                "content": "Best meal ever",
-                "mealId": 1,
-                "createdAt": 12345
-            }
-        ]    },
+        "price" : 23
+         },
          { 
             "id" : 2,
             "NumberOfGuests" : 4,
@@ -23,7 +16,7 @@
             "adress" : "asdsd",
             "time": "asd",
             "price" : 59,
-            "review" : [],
+           
             "createdArt": 12345
 
          },
@@ -35,14 +28,7 @@
             "adress" : "asdsd",
             "time": "asd",
             "price" : 10,
-            "review" : [
-                { "id": 3,
-                    "numberOfStars": 2,
-                    "content": "it is delicious",
-                    "mealId": 3,
-                    "createdAt": 12345
-                }
-            ]
+            "reviews" : []
             
 
          },
@@ -54,7 +40,7 @@
             "adress" : "asdsd",
             "time": "asd",
             "price" : 120,
-            "review" : [],
+          
             "createdArt": 1234567
 
          }
