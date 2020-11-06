@@ -1,0 +1,47 @@
+[  {
+    "id" : 1,
+    "NumberOfGuests" : 3,
+    "title" : "Burguer",
+    "description" : "delicious burguer",
+    "adress" : "asdsd",
+    "time": "asd",
+    "price" : 23
+     },
+     { 
+        "id" : 2,
+        "NumberOfGuests" : 4,
+        "title" : "Rød grød med ",
+        "description" : "Breackfast Good",
+        "adress" : "asdsd",
+        "time": "asd",
+        "price" : 59,
+       
+        "createdArt": 12345
+
+     },
+     { 
+        "id" : 3,
+        "NumberOfGuests" : 6,
+        "title" : "rice milk",
+        "description" : "great food!!",
+        "adress" : "asdsd",
+        "time": "asd",
+        "price" : 10,
+        "reviews" : []
+        
+
+     },
+     { 
+        "id" : 4,
+        "NumberOfGuests" : 12,
+        "title" : "mexican food",
+        "description" : "spice food ",
+        "adress" : "asdsd",
+        "time": "asd",
+        "price" : 120,
+      
+        "createdArt": 1234567
+
+     }
+
+      ]
