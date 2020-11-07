@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 // import data here
-const meals = require("./data/meals.json");
+const meals = require("./data/meals.json" );
 const reservations = require("./data/reservations.json");
 const reviews = require("./data/reviews.json");
 const warmup = require("./data/warmup.js");
