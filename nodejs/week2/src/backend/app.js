@@ -11,10 +11,4 @@ app.use('/meals',meal_parameter);
 
 
 
-
-
-
-
-
-
 module.exports = app;
