@@ -1,0 +1,15 @@
+import { useEffect, useRef } from 'react'; 
+
+
+//----------------Fibonacci-------------------
+const usePrevious = value => {
+    const ref = useRef(value);
+  
+    useEffect(() => {
+      ref.current = value;
+    }, [value]);
+  
+    return ref.current;
+  };
+  
+  export default usePrevious;
