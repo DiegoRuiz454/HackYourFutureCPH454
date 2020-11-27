@@ -1,11 +1,14 @@
-import React from 'react';
 import ReactDOM from  'react-dom';
 
 class TodoList extends React.Component {
   render() {
-    return [<li>{this.props.parameters.render_A} Get out of bed, {this.props.parameters.render_B} "Wed Sep 13 2017"</li>,
-           <li>{this.props.parameters.render_A} Brush teeth, {this.props.parameters.render_B} "Thu Sep 14 2017"</li>,
-           <li>{this.props.parameters.render_A} Eat breakfast, {this.props.parameters.render_B} "Fri Sep 15 2017"</li>];
+    return [<div>
+              <ul>
+                 {this.props.parameters.render_A} Get out of bed, {this.props.parameters.render_B} "Wed Sep 13 2017",
+                 {this.props.parameters.render_A} Brush teeth, {this.props.parameters.render_B} "Thu Sep 14 2017",
+                 {this.props.parameters.render_A} Eat breakfast, {this.props.parameters.render_B} "Fri Sep 15 2017"
+              </ul>
+            </div>];
   }
 }
 
@@ -20,6 +23,6 @@ class Atributes extends React.Component {
     );
   }
 }
-ReactDOM.render(<Atributes />, document.getElementById('root'));
+
 
 export default Atributes;
