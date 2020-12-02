@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Todo from './Todo_';
+import Todo from './Todo';
 
 function WatchCount() {
   const [count, setCount] = useState(0);
