@@ -5,12 +5,12 @@ function WatchCount() {
   const [count, setCount] = useState(0);
   
     useEffect(() => {
-    console.log('starting count')
+   // console.log('starting count')
     var timer = setTimeout(() => {
       setCount((prev) => prev + 1);
     }, 1000);
     return () => {
-      console.log('clear Time')
+      //console.log('clear Time')
       clearTimeout(timer)
     }
   }, [count]);

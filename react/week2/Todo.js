@@ -10,7 +10,6 @@ class Todo extends Component {
             todos : [],
             Body : "",
             id : ""
-            
          }
     }
     deleteEvent = (index) => {
