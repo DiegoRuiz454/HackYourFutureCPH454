@@ -6,11 +6,10 @@ class ItemList extends Component {
         <div>
          <li>
              {this.props.id} <button onClick={this.props.delete}>Delete</button>
-             
             <br/>
             {this.props.description}  
             <br/>
-            
+             
           </li>
         </div> 
     )

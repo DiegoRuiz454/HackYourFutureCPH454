@@ -5,7 +5,6 @@ class Todo extends Component {
     constructor (){
         super();
         this.postID = 0;
-       
         this.state = {
             todos : [],
             Body : "",
